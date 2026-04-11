@@ -1,0 +1,66 @@
+/* CSS Global */
+
+html {
+  font-size: 12px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  font-size: 2rem; /* 2x tamanho raiz */
+  margin: 0;
+  padding: .5em;
+  background-color: rgb(248, 206, 206);
+}
+
+p {
+  font-size: medium;
+}
+
+p::first-letter {
+  font-size: 4em;
+}
+
+p:first-of-type::selection {
+  color: red;
+}
+
+.quote {
+  font-style: italic;
+}
+
+#span-id {
+  color: blue;
+}
+
+[id="span-id"], [class="quote"] {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 14px;
+    color: red;
+  }
+
+  p::selection {
+    color: black;
+  }
+}
+
+.f {
+  display: flex;
+}
+
+aside {
+  flex-shrink: 5;
+}
+
+main {
+  flex-shrink: 1;
+}
+
+.left, .right {
+  flex-basis: 15em;
+  flex-shrink: 1;
+  flex-grow: 0;
+}
