@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  background: gray;
+  text-align: center;
+  padding: 12px;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex: 1;
+}
+
+nav {
+  flex: 1;
+  background-color: cornflowerblue;
+}
+
+section {
+  flex: 3;
+  background-color: gainsboro;
+}
+
+aside {
+  flex: 1;
+  background-color: orangered;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+
+  section {
+    order: 1;
+  }
+
+  aside {
+    order: 2;
+  }
+
+  nav {
+    order: 3;
+  }
+
+  nav,
+  aside {
+    flex: none;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
