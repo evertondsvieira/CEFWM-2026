@@ -1,0 +1,101 @@
+<!doctype html>
+<html class="no-js" lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minhas ferramentas</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- d-flex = "display: flex" -->
+  <div class="d-flex flex-column min-vh-100">
+
+    <header>
+      <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Seletor de Cor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contador.html">Contador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="cronometro.html">Cronometro</a>
+              </li>
+              <li class="nav-item"> 
+                <a class="nav-link" href="to-do-list.html">To Do List</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- d-flex = "display: flex" -->
+    <div class="d-flex flex-column flex-md-row flex-grow-1">
+      <!-- "flex-grow: 1;" -->
+      <main class="flex-grow-1 p-3">
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+          <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Cronometro</h1>
+            <p class="col-md-8 fs-4">Utilize os botões abaixo para cronometrar suas atividades</p>
+          </div>
+        </div>
+
+        <div class="d-grid d-md-flex justify-content-md-center gap-1 mx-2">
+          <button id="start" type="button" class="btn btn-success">
+            <i class="bi bi-play-circle-fill"></i>
+            Iniciar
+          </button>
+          <button id="pause" type="button" class="btn btn-warning">
+            <i class="bi bi-pause-circle-fill"></i>
+            Pausar
+          </button>
+          <button id="restart" type="button" class="btn btn-danger">
+            <i class="bi bi-stop-circle-fill"></i>
+            Reiniciar
+          </button>
+        </div>
+
+        <output class="d-block text-center">
+          0
+        </output>
+      </main>
+    </div>
+
+    <footer class="text-center p-2 bg-secondary bg-opacity-10 fst-italic text-black text-opacity-50">
+      Copyright © 2026 Everton Da Silva Vieira
+    </footer>
+  </div>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/cronometro.js"></script>
+
+</body>
+
+</html>
