@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ferramenta Contagem Regressiva</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="d-flex flex-column min-vh-100">
+
+    <div class="d-flex flex-column flex-md-row flex-grow-1">
+      <main class="flex-grow-1 p-3">
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+          <div class="text-center container-fluid py-5">
+            <h1 class="display-5 fw-bold">Contagem Regressiva</h1>
+            <p class="fs-4">Esta aplicação recupera de um serviço Web Service a data de um evento, e então
+              exibe uma contagem regressiva.</p>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col">
+            <div class="bg-dark text-white p-5" id="days">0</div>
+            <div class="border p-5">dias</div>
+          </div>
+
+          <div class="col">
+            <div class="bg-dark text-white p-5" id="hours">0</div>
+            <div class="border p-5">horas</div>
+          </div>
+
+          <div class="col">
+            <div class="bg-dark text-white p-5" id="minutes">0</div>
+            <div class="border p-5">minutos</div>
+          </div>
+
+          <div class="col">
+            <div class="bg-dark text-white p-5" id="seconds">0</div>
+            <div class="border p-5">segundos</div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="text-center p-2 bg-secondary bg-opacity-10 fst-italic text-black text-opacity-50">
+      Copyright © 2026 Everton Da Silva Vieira
+    </footer>
+  </div>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
